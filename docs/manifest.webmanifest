@@ -1,7 +1,7 @@
 {
   "name": "Lu Fashion Hair",
   "short_name": "Lu Fashion",
-  "description": "Agenda, clientes e financeiro da Lu Fashion Hair.",
+  "description": "Dias e horários das clientes da Lu.",
   "lang": "pt-BR",
   "start_url": "/?source=app",
   "scope": "/",
