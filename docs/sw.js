@@ -1,5 +1,6 @@
-const CACHE='lu-fashion-hair-agenda-20260905-1';
+const CACHE='lu-fashion-hair-agenda-20260905-2';
 const APP_SHELL=['/','/css/agenda.css?v=20260905-1','/js/api.js?v=20260905-1','/js/agenda.js?v=20260905-1','/assets/logo-lu-fashion-hair.png','/assets/app-icon-192.png','/assets/app-icon-512.png','/manifest.webmanifest'];
+APP_SHELL.push('/css/agenda-visual.css?v=20260905-2');
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
